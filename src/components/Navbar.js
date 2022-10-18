@@ -5,8 +5,8 @@ const Navbar = () => {
   return (
     <Box
       height={["70px", "90px"]}
-      pl={[5, 8, "80px"]}
-      pr={[5, 8, "80px"]}
+      pl={[5, 8, 50]}
+      pr={[5, 8, 50]}
       position={"sticky"}
       display={"flex"}
       alignItems={"center"}

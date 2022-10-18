@@ -1,25 +1,34 @@
-import { Text } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
 import Wrapper from "./Wrapper";
+import { Projects } from "../content/Projects";
 
 const Works = () => {
   return (
     <Wrapper>
-      <Text fontSize={[20, 40]}>
+      <Text pt={[5, 12]} fontSize={[24, 40]}>
         Alguns <strong>projetos</strong> implementados:
       </Text>
-      <ProjectCard
-        image={"./assets/img/test.png"}
-        name={"QR Code"}
-        description={"Sistema de entrada e saída controlado por QR Code"}
-        stackTree={"React | Node.js | Prisma | PostgreSql"}
-      />
-      <ProjectCard
-        image={"./assets/img/test.png"}
-        name={"Arranchamento"}
-        description={"Agendamento de refeições"}
-        stackTree={"HTML | CSS | BootStrap | PHP | MySql"}
-      />
+      <Flex
+        flexDirection={["column", "row"]}
+        flexWrap={"wrap"}
+        gap={[5, 12]}
+        pt={[5, "20px"]}
+        justifyContent={"space-evenly"}
+      >
+        {Projects.map((project) => {
+          return (
+            <ProjectCard
+              key={project.id}
+              id={project.id}
+              image={project.image}
+              name={project.name}
+              description={project.description}
+              stackTree={project.stackTree}
+            />
+          );
+        })}
+      </Flex>
     </Wrapper>
   );
 };

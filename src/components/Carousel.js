@@ -6,10 +6,11 @@ import "swiper/css/pagination";
 
 import { EffectCoverflow, Pagination } from "swiper";
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import Wrapper from "./Wrapper";
 
 const Carousel = ({ imagesVector }) => {
   return (
-    <Box p={[5, 20]}>
+    <Wrapper>
       <Text fontSize={[26, 40]}>
         Minhas <strong>stacks</strong>:
       </Text>
@@ -37,7 +38,9 @@ const Carousel = ({ imagesVector }) => {
                 <SwiperSlide key={img.tech}>
                   <Flex flexDirection={"column"} alignItems={"center"}>
                     <Image h={["80px", "250px"]} src={img.img} />
-                    <Text>{img.tech}</Text>
+                    <Text pt={[3, 6]} fontSize={[16, 24]}>
+                      {img.tech}
+                    </Text>
                   </Flex>
                 </SwiperSlide>
               );
@@ -45,7 +48,7 @@ const Carousel = ({ imagesVector }) => {
           </Flex>
         </Swiper>
       </Box>
-    </Box>
+    </Wrapper>
   );
 };
 export default Carousel;

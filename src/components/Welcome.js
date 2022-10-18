@@ -6,7 +6,7 @@ const Welcome = () => {
   return (
     <Wrapper>
       <Flex
-        h={["calc(100vh - 120px)", "calc(100vh - 150px)"]}
+        h={["calc(100vh - 120px)", "calc(100vh - 250px)"]}
         alignItems={"center"}
         justifyContent={"center"}
         id="home"

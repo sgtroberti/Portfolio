@@ -8,8 +8,12 @@ import bootstrap from "./svg/bootstrap.svg";
 import mysql from "./svg/mysql.svg";
 import mongodb from "./svg/mongodb.svg";
 import postgresql from "./svg/postgresql.svg";
+import gmail from "./svg/gmail.svg";
+import github from "./svg/github.svg";
+import linkedin from "./svg/linkedin.svg";
+import whatsapp from "./png/whatsapp.png";
 
-const TechLogos = [
+export const TechLogos = [
   { tech: "HTML 5", img: html },
   { tech: "CSS 3", img: css },
   { tech: "Javascript", img: javascript },
@@ -22,4 +26,13 @@ const TechLogos = [
   { tech: "PostgreSql", img: postgresql },
 ];
 
-export default TechLogos;
+export const ContactLogos = [
+  { media: "Email", img: gmail, link: "mailto:devroberti@gmail.com" },
+  { media: "GitHub", img: github, link: "https://github.com/SgtRoberti" },
+  {
+    media: "Linkedin",
+    img: linkedin,
+    link: "https://www.linkedin.com/in/devroberti/",
+  },
+  { media: "WhatsApp", img: whatsapp, link: "https://wa.me/5593992003313" },
+];
