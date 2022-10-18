@@ -5,7 +5,7 @@ import Wrapper from "./Wrapper";
 const Works = () => {
   return (
     <Wrapper>
-      <Text fontSize={[18]}>
+      <Text fontSize={[20, 40]}>
         Alguns <strong>projetos</strong> implementados:
       </Text>
       <ProjectCard
