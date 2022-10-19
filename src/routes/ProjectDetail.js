@@ -33,8 +33,9 @@ const ProjectDetail = () => {
         <Flex
           flexDir={["column", "row"]}
           alignItems={"center"}
-          justifyContent={"space-evenly"}
-          w="100%"
+          justifyContent={"center"}
+          m="auto"
+          w="80%"
           gap={2}
         >
           <Flex
