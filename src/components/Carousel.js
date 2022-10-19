@@ -19,7 +19,7 @@ const Carousel = ({ imagesVector }) => {
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={"auto"}
+          slidesPerView={"2"}
           loop={true}
           coverflowEffect={{
             rotate: 50,
