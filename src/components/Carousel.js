@@ -14,7 +14,7 @@ const Carousel = ({ imagesVector }) => {
       <Text fontSize={[26, 40]}>
         Minhas <strong>stacks</strong>:
       </Text>
-      <Box pt={[3, 12]}>
+      <Box pt={[3, 12]} width={["100%", "75%"]} margin="auto">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
@@ -37,7 +37,7 @@ const Carousel = ({ imagesVector }) => {
               return (
                 <SwiperSlide key={img.tech}>
                   <Flex flexDirection={"column"} alignItems={"center"}>
-                    <Image h={["80px", "250px"]} src={img.img} />
+                    <Image h={["80px", "160px"]} src={img.img} />
                     <Text pt={[3, 6]} fontSize={[16, 24]}>
                       {img.tech}
                     </Text>

@@ -1,11 +1,9 @@
 import { Box, Flex, Link } from "@chakra-ui/react";
 
-import { useEffect } from "react";
-
 const Navbar = ({ notHome }) => {
   const generateLinks = () => {
     return (
-      <Flex gap={[10, 5]} pt={[8, 0]}>
+      <Flex gap={[10, 5]} pt={[8, 0]} fontSize={[16, 20]}>
         {notHome ? (
           <Link href={!notHome ? "#home" : "/"}>Início</Link>
         ) : (
@@ -36,8 +34,8 @@ const Navbar = ({ notHome }) => {
         alignItems={"center"}
         justifyContent={["center", "space-between"]}
       >
-        <Link href="/" fontSize={[20, 22, 28]} fontWeight={"700"}>
-          Roberti's Portfolio
+        <Link href="/" fontSize={[24, 40]} fontWeight={"700"}>
+          Guilherme Roberti - Portfólio
         </Link>
 
         <Box display={["none", "flex"]} gap={[0, 15, 35]} fontWeight={"700"}>
