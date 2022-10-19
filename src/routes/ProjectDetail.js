@@ -60,7 +60,7 @@ const ProjectDetail = () => {
             )}
           </Flex>
           {!productDetail?.video ? (
-            <Image borderRadius={16} src={productDetail.image} />
+            <Image borderRadius={16} maxH={"600px"} src={productDetail.image} />
           ) : (
             <ReactPlayer
               width={"100%"}
