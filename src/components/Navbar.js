@@ -10,9 +10,10 @@ const Navbar = ({ notHome }) => {
           <Link href={!notHome ? "#home" : "/"}>Início</Link>
         ) : (
           <>
-            <Link href={!notHome ? "#stacks" : "/#stacks"}>Stacks</Link>
-            <Link href={!notHome ? "#projects" : "/#projects"}>Projetos</Link>
-            <Link href={!notHome ? "#contacts" : "/#contacts"}>Contato</Link>
+            <Link href={"#about"}>Sobre</Link>
+            <Link href={"#stacks"}>Stacks</Link>
+            <Link href={"#projects"}>Projetos</Link>
+            <Link href={"#contacts"}>Contato</Link>
           </>
         )}
       </Flex>

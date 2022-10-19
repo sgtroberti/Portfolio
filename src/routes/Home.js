@@ -1,3 +1,4 @@
+import About from "../components/About";
 import Carousel from "../components/Carousel";
 import Contact from "../components/Contact";
 import Navbar from "../components/Navbar";
@@ -10,6 +11,7 @@ const Home = () => {
     <>
       <Navbar />
       <Welcome />
+      <About />
       <Carousel imagesVector={TechLogos} />
       <Works />
       <Contact />
