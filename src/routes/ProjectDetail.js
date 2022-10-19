@@ -26,7 +26,7 @@ const ProjectDetail = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar notHome />
       <Wrapper>
         <Flex flexDir={"column"} gap={2}>
           <Text fontSize={["28px", "48px"]} fontWeight={700}>

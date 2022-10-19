@@ -15,11 +15,7 @@ const Welcome = () => {
           Guilherme Roberti, FullStack Developer
         </Text>
       </Flex>
-      <Flex
-        h={["50px", "60px"]}
-        justifyContent={"center"}
-        alignItems={"center"}
-      >
+      <Flex h={["0px", "0px"]} justifyContent={"center"} alignItems={"center"}>
         <TriangleDownIcon w={6} h={6} />
       </Flex>
     </Wrapper>

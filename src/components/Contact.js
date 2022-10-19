@@ -10,7 +10,7 @@ const Contact = () => {
         Quer entrar em <strong>contato</strong>? Bora um café?
       </Text>
 
-      <Flex justifyContent={"space-around"} alignItems={"center"}>
+      <Flex id="contacts" justifyContent={"space-around"} alignItems={"center"}>
         {ContactLogos.map((contact) => (
           <ContactButton key={contact.media} contact={contact} />
         ))}

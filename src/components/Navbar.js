@@ -1,25 +1,56 @@
-import { HamburgerIcon } from "@chakra-ui/icons";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Flex, Link } from "@chakra-ui/react";
 
-const Navbar = () => {
+import { useEffect } from "react";
+
+const Navbar = ({ notHome }) => {
+  const generateLinks = () => {
+    return (
+      <Flex gap={[10, 5]} pt={[8, 0]}>
+        {notHome ? (
+          <Link href={!notHome ? "#home" : "/"}>Início</Link>
+        ) : (
+          <>
+            <Link href={!notHome ? "#stacks" : "/#stacks"}>Stacks</Link>
+            <Link href={!notHome ? "#projects" : "/#projects"}>Projetos</Link>
+            <Link href={!notHome ? "#contacts" : "/#contacts"}>Contato</Link>
+          </>
+        )}
+      </Flex>
+    );
+  };
+
   return (
     <Box
-      height={["70px", "90px"]}
+      height={["90px"]}
       pl={[5, 8, 50]}
       pr={[5, 8, 50]}
-      position={"sticky"}
-      display={"flex"}
-      alignItems={"center"}
-      justifyContent={"space-between"}
+      position={"fixed"}
+      w="100%"
+      bgColor={"#212121"}
+      zIndex={5}
     >
-      <Text fontSize={[20, 22, 28]} fontWeight={"700"}>
-        Roberti's Portfolio
-      </Text>
-      <HamburgerIcon w={6} h={6} display={["fixed", "none"]} />
-      <Box display={["none", "flex"]} gap={[0, 15, 35]} fontWeight={"700"}>
-        <a>Início</a>
-        <p>Projetos</p>
-        <p>Contato</p>
+      <Flex
+        pt={[4, 5]}
+        w="100%"
+        alignItems={"center"}
+        justifyContent={["center", "space-between"]}
+      >
+        <Link href="/" fontSize={[20, 22, 28]} fontWeight={"700"}>
+          Roberti's Portfolio
+        </Link>
+
+        <Box display={["none", "flex"]} gap={[0, 15, 35]} fontWeight={"700"}>
+          {generateLinks()}
+        </Box>
+      </Flex>
+      <Box
+        mt={"-20px"}
+        display={["flex", "none"]}
+        justifyContent="center"
+        gap={[0, 15, 35]}
+        fontWeight={"700"}
+      >
+        {generateLinks()}
       </Box>
     </Box>
   );

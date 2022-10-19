@@ -10,7 +10,7 @@ import Wrapper from "./Wrapper";
 
 const Carousel = ({ imagesVector }) => {
   return (
-    <Wrapper>
+    <Wrapper id="stacks">
       <Text fontSize={[26, 40]}>
         Minhas <strong>stacks</strong>:
       </Text>

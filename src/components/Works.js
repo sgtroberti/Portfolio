@@ -5,7 +5,7 @@ import { Projects } from "../content/Projects";
 
 const Works = () => {
   return (
-    <Wrapper>
+    <Wrapper id="projects">
       <Text pt={[5, 12]} fontSize={[24, 40]}>
         Alguns <strong>projetos</strong> implementados:
       </Text>
