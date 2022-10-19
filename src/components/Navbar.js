@@ -1,4 +1,4 @@
-import { Box, Flex, Link } from "@chakra-ui/react";
+import { Box, Flex, Image, Link } from "@chakra-ui/react";
 
 const Navbar = ({ notHome }) => {
   const generateLinks = () => {
@@ -35,7 +35,7 @@ const Navbar = ({ notHome }) => {
         justifyContent={["center", "space-between"]}
       >
         <Link href="/" fontSize={[24, 40]} fontWeight={"700"}>
-          Guilherme Roberti - Portfólio
+          Guilherme - Portfólio
         </Link>
 
         <Box display={["none", "flex"]} gap={[0, 15, 35]} fontWeight={"700"}>
